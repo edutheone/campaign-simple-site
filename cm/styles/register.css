@@ -1,0 +1,61 @@
+ body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+
+            /* Jubilee flag inspired background */
+            background: linear-gradient(
+                135deg,
+                #d10000 0%,   /* red */
+                #ffffff 40%,  /* white */
+                #00a650 100%  /* green */
+            );
+
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .form-container {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 30px;
+            width: 380px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+
+        h2 {
+            text-align: center;
+            color: #d10000;
+            margin-bottom: 20px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            outline: none;
+        }
+
+        textarea {
+            resize: none;
+            height: 90px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background: #00a650;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #007f3d;
+        }

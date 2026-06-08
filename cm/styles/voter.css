@@ -1,0 +1,127 @@
+/* General Page Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+.main-header h2 {
+    margin: 0;
+    font-size: 1.4rem;
+    color: #2c3e50; /* Matches your Ward Header color */
+    letter-spacing: 1px;
+    border-left: 4px solid #e67e22; /* Adds the orange accent for consistency */
+    padding-left: 15px;
+    display: flex;
+    align-items: center;
+}
+
+/* Ward Headers */
+.ward-header {
+    background-color: #2c3e50;
+    color: #ffffff;
+    padding: 15px;
+    border-radius: 8px 8px 0 0;
+    margin-bottom: 0;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    border-left: 5px solid #e67e22; /* Orange accent */
+}
+
+/* Table Styling */
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 0 0 8px 8px;
+    overflow: hidden;
+    border: none;
+}
+
+.admin-table thead {
+    background-color: #ecf0f1;
+}
+
+.admin-table th {
+    text-align: left;
+    padding: 12px 15px;
+    font-weight: 600;
+    color: #2c3e50;
+    border-bottom: 2px solid #ddd;
+}
+
+.admin-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #eee;
+    vertical-align: middle;
+}
+
+.admin-table tbody tr:hover {
+    background-color: #f9f9f9;
+}
+
+/* Delete Button Styling */
+.btn-delete {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background 0.3s ease;
+}
+
+.btn-delete:hover {
+    background-color: #c0392b;
+}
+
+/* Empty State Alert */
+.no-data-alert {
+    background-color: #fff;
+    border: 2px dashed #bdc3c7;
+    padding: 40px;
+    text-align: center;
+    border-radius: 10px;
+    color: #7f8c8d;
+    margin-top: 50px;
+}
+
+.no-data-alert h3 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+.main-header {
+    position: -webkit-sticky; /* Support for Safari */
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensures it stays above the table content */
+    background-color: #ffffff; /* Change to your preferred color */
+    padding: 15px 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: center; /* Centers the links */
+}
+
+.main-header nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #700851;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.main-header nav a:hover {
+    color: #007bff; /* Highlight color on hover */
+}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .admin-table {
+        display: block;
+        overflow-x: auto;
+    }
+}
